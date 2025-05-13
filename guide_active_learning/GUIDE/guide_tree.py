@@ -290,7 +290,7 @@ class GUIDEDecisionTreeVisualiser:
                     label = f"{node.feature}"
             else:
                 max_target = cast(pd.Series, node.value).idxmax()
-                label = f"Output:\n {max_target},\n Certainty:\n {cast(pd.Series, node.value).loc[max_target]:.2f}"
+                label = f"Ausgangsgroesse:\n {max_target},\n Sicherheit:\n {cast(pd.Series, node.value).loc[max_target]:.2f}"
                 fillcolor = label_colors.get(max_target, "#A0C4FF")
 
             color = "#D3D3D3" if node.feature else fillcolor
@@ -456,7 +456,7 @@ class GUIDEDecisionTreeVisualiser:
                         label = f"{node.feature}:"
                 else:
                     max_target = cast(pd.Series, node.value).idxmax()
-                    label = f"Output: \n{max_target},\n Certainty: {cast(pd.Series, node.value).loc[max_target]:.2f}"
+                    label = f"Ausgangsgroesse: \n{max_target},\n Sicherheit: {cast(pd.Series, node.value).loc[max_target]:.2f}"
 
                 if isinstance(node.threshold, float):
                     left_edge_label = f"\n<= {node.threshold:.2f}"
