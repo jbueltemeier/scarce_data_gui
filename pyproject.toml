@@ -1,0 +1,20 @@
+[build-system]
+# The build system section is needed in order to workaround the side-effect introduced
+# by recent setup tools version. The recent setuptools version update (64.0.0) broke
+# paths of editable installations and we have to pin it to 63.4.3 version
+# The problem is tracked (and this limitation might be removed if it is solved) in:
+# https://github.com/pypa/setuptools/issues/3548
+requires = [
+  "setuptools==63.4.3",
+  "setuptools_scm[toml]>=3.4",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# See https://github.com/pypa/setuptools_scm/#configuration-parameters for available
+# options
+
+write_to = "scarce_data_gui/_version.py"
+version_scheme = "guess-next-dev"
+local_scheme = "node-and-timestamp"
