@@ -13,7 +13,7 @@ The targeted collection and analysis of data is essential for companies in order
 
 # Documentation
 
-WIP
+A documentation of this workflow, along with an application example that guides you step by step through the individual solution components, can be found on the [it’s OWL innovation platform](https://plattform.its-owl.de/projects/ai-for-scarce-data-maschinelles-lernen-und-informationsfusion-zur-nachhaltigen-nutzung-von-labor-und-kundendaten/AXYP8egrEQ).
 
 ## License
 
