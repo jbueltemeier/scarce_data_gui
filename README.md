@@ -37,10 +37,10 @@ source .venv/bin/activate or .venv\Scripts\activate (on Windows)
 pip install .
 ```
 
-Die streamlit app kann mit folgendem Befehl gestartet werden:
+The streamlit app can be started with the following command:
 ```shell
 python -m streamlit run streamlit_pages/Home.py
-# oder mit python3
+# or with python3
 python3 -m streamlit run streamlit_pages/Home.py
 ```
 

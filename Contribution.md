@@ -12,9 +12,9 @@ the development environment
 
 ```shell
 git clone https://github.com/jbueltemeier/scarce_data_gui
-cd gea-labeling-gui
+cd scarce_data_gui
 python -m pip install --user virtualenv (if not installed)
-virtualenv .venv --prompt='(labeling-gui-dev) '
+virtualenv .venv --prompt='(scarce_data_gui-dev) '
 source .venv/bin/activate (on Linux) or .venv\Scripts\activate (on Windows)
 pip install doit
 doit install
